@@ -1,0 +1,129 @@
+{
+  "name": "DVBA",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "health",
+      "seq": 2,
+      "request": {
+        "url": "http://127.0.0.1:3000/api/health/check",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "login as admin admin",
+      "seq": 4,
+      "request": {
+        "url": "http://127.0.0.1:3000/api/user/login",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"enc_data\": \"Gk8UCQwcCQAABFhTTAYFAAgUS0JFEQwSCR4BFQVPW1gICgoIA0MH\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "register as test test",
+      "seq": 3,
+      "request": {
+        "url": "http://127.0.0.1:3000/api/user/register",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"enc_data\": \"Gk8UCQwcCQAABFhTTBMEHhVYRUwXAB4SDQYcA0NXQw4MHRNDEA==\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "login as test test",
+      "seq": 5,
+      "request": {
+        "url": "http://127.0.0.1:3000/api/user/login",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"enc_data\": \"Gk8UCQwcCQAABFhTTBMEHhVYRUwXAB4SDQYcA0NXQw4MHRNDEA==\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "brunoConfig": {
+    "version": "1",
+    "name": "DVBA",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}
